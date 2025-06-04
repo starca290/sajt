@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop Forme</title>
+  <link rel="stylesheet" href="forme.css">
+</head>
+<body>
+  <div class="Sve">
+    <h2>Registracija</h2>
+    <form>
+      <input type="text" name="ime" placeholder="Ime" required>
+      <input type="text" name="prezime" placeholder="Prezime" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" name="lozinka" placeholder="Lozinka" required>
+      <button type="submit">Registruj se</button>
+    </form>
+
+    <h2>Porudžbina</h2>
+    <form>
+      <input type="text" name="proizvod" placeholder="Naziv proizvoda" required>
+      <input type="number" name="kolicina" placeholder="Količina" required min="1">
+      <select name="nacinPlacanja" required>
+        <option value="">Način plaćanja</option>
+        <option value="kartica">Platna kartica</option>
+        <option value="paypal">PayPal</option>
+      </select>
+      <textarea name="adresa" rows="3" placeholder="Adresa za isporuku" required></textarea>
+      <button type="submit">Naruči</button>
+    </form>
+  </div>
+</body>
+</html>
